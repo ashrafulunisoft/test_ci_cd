@@ -19,3 +19,4 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           source: index.html
           target: /var/www/html
+          overwrite: true
