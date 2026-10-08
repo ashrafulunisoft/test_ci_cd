@@ -1,0 +1,15 @@
+name: My First Workflow
+
+on: [push, pull_request]
+
+jobs:
+  my-job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: echo "hello world"
+
+      - name: Multi-line Step
+        run: |
+          echo "hello world" > hello.txt
+          cat hello.txt
